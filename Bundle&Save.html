@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle & Save</title>
+    <link rel="stylesheet" href="Bundle&Sava.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Bundle & Save</h2>
+
+        <div class="box" id="box-1" onclick="selectBox(1)">
+            <div class="box-header">
+                <div class="box-left">
+                    <div class="radio-container">
+                        <input type="radio" id="bundle1" name="bundle" value="195" onclick="event.stopPropagation()">
+                    </div>
+                    <div>
+                        <span class="bundle-name">1 Pair</span>
+                        <br>
+                        <span class="bundle-price">DKK 195.00</span>
+                    </div>
+                </div>
+                <div class="box-right">
+                    <span class="discount-tag">50% OFF</span>
+                </div>
+            </div>
+            <div class="content" id="content-1">
+                <div class="selection-row">
+                    <div class="item-number">#1</div>
+                    <div class="selection-column">
+                        <label class="selection-label">Size</label>
+                        <select class="size-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </div>
+                    <div class="selection-column">
+                        <label class="selection-label">Colour</label>
+                        <select class="color-dropdown">
+                            <option value="colour">colour</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box selected" id="box-2" onclick="selectBox(2)">
+            <div class="popular-tag">Most Popular</div>
+            <div class="box-header">
+                <div class="box-left">
+                    <div class="radio-container">
+                        <input type="radio" id="bundle2" name="bundle" value="345" checked onclick="event.stopPropagation()">
+                    </div>
+                    <div>
+                        <span class="bundle-name">2 Pair</span>
+                        <br>
+                        <span class="bundle-price">DKK 345.00</span>
+                        <span class="original-price">DKK 195.00</span>
+                    </div>
+                </div>
+                <div class="box-right">
+                    <span class="discount-tag">40% OFF</span>
+                </div>
+            </div>
+            <div class="content" id="content-2" style="display: block;">
+                <div class="selection-row">
+                    <div class="item-number">#1</div>
+                    <div class="selection-column">
+                        <label class="selection-label">Size</label>
+                        <select class="size-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </div>
+                    <div class="selection-column">
+                        <label class="selection-label">Colour</label>
+                        <select class="color-dropdown">
+                            <option value="colour">colour</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="selection-row">
+                    <div class="item-number">#2</div>
+                    <div class="selection-column">
+                        <label class="selection-label">Size</label>
+                        <select class="size-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </div>
+                    <div class="selection-column">
+                        <label class="selection-label">Colour</label>
+                        <select class="color-dropdown">
+                            <option value="colour">colour</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" id="box-3" onclick="selectBox(3)">
+            <div class="box-header">
+                <div class="box-left">
+                    <div class="radio-container">
+                        <input type="radio" id="bundle3" name="bundle" value="528" onclick="event.stopPropagation()">
+                    </div>
+                    <div>
+                        <span class="bundle-name">3 Pair</span>
+                        <br>
+                        <span class="bundle-price">DKK 528.00</span>
+                    </div>
+                </div>
+                <div class="box-right">
+                    <span class="discount-tag">60% OFF</span>
+                </div>
+            </div>
+            <div class="content" id="content-3">
+                <div class="selection-row">
+                    <div class="item-number">#1</div>
+                    <div class="selection-column">
+                        <label class="selection-label">Size</label>
+                        <select class="size-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </div>
+                    <div class="selection-column">
+                        <label class="selection-label">Colour</label>
+                        <select class="color-dropdown">
+                            <option value="colour">colour</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="selection-row">
+                    <div class="item-number">#2</div>
+                    <div class="selection-column">
+                        <label class="selection-label">Size</label>
+                        <select class="size-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </div>
+                    <div class="selection-column">
+                        <label class="selection-label">Colour</label>
+                        <select class="color-dropdown">
+                            <option value="colour">colour</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="selection-row">
+                    <div class="item-number">#3</div>
+                    <div class="selection-column">
+                        <label class="selection-label">Size</label>
+                        <select class="size-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </div>
+                    <div class="selection-column">
+                        <label class="selection-label">Colour</label>
+                        <select class="color-dropdown">
+                            <option value="colour">colour</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix">
+            <p id="shipping-text">Free 2 Day Shipping</p>
+            <p id="total">Total: DKK 360.00</p>
+        </div>
+
+        <button onclick="addToCart()">+ Add to Cart</button>
+        
+    </div>
+    <script src="Bundle&Save.js"></script>
+
+</body>
+</html>
